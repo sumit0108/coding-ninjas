@@ -14,7 +14,7 @@ for (let i = 0; i < str.length; i++) {
 }
 console.log(result);
 
-//2n complexity
+// 2n complexity
 
 for (let i = 0; i < str.length; i++) {
   let ch = str.charCodeAt(i);

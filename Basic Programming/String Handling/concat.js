@@ -6,4 +6,10 @@ let str4 = {
   obj: "sb",
 };
 
-console.log(str.concat("dslkfjs"));
+// console.log(str.concat("dslkfjs"));
+// console.log(str.concat("dslkfjs"));
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice();
+
+console.log(part);
