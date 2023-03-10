@@ -1,11 +1,18 @@
-// let arr = [1, 2, 3, 4];
+/**
+ * slice() method slices out a piece of an array into a new array.
+ *
+ *Note
+  The slice() method creates a new array.
 
-let result = arr.splice(0, 2);
+  The slice() method does not remove any elements from the source array.
 
-// console.log(result, arr);
+  The slice() method can take two arguments like slice(1, 3).
 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(1);
+  The method then selects elements from the start argument, and up to (but not including) the end argument.
 
-console.log(fruits);
-console.log(citrus);
+
+
+ */
+let arr = [1, 2, 3, 4];
+
+console.log(arr.slice(-2, 3));
