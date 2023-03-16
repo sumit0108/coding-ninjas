@@ -20,24 +20,11 @@ obj.func = (a, b) => a + b;
 function test(c, d) {
   this.c = c;
   this.d = d;
-  function demo() {
+  this.sumit = () => {
     console.log("demo called");
-  }
-  test.demo = demo;
+  };
 }
 
-test(2, 3);
-test.demo();
-console.log(test.prototype);
-// let objF = new test(2, 3);
+let objF = new test(2, 3);
 // console.log(test.demo());
-
-// function initValidation() {
-//   // irrelevant code here
-//   function validate(_block) {
-//     console.log("test", _block);
-//   }
-//   initValidation.validate = validate;
-// }
-// initValidation();
-// initValidation.validate("hello");
+console.log(objF.sumit());

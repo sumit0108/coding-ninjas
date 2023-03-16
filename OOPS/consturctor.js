@@ -7,17 +7,16 @@
 // let obj = new MyClass();
 
 class MyClass {
-  // constructor(a, b, c) {
-  //   this.a = a;
-  //   this.b = b;
-  //   this.c = c;
-  // }
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
 
   func() {
     console.log("func called");
   }
 }
 
-let obj = new MyClass();
+let obj = new MyClass(2, 3);
 obj.func();
 // console.log(obj.d);
