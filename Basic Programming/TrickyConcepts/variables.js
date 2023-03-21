@@ -1,9 +1,6 @@
-// hositing();
-// console.log(a);
+console.log(a);
+// var a = 8;
 
-class Hositing {
-  constructor() {
-    console.log("hositing");
-  }
-}
-let a = new Hositing();
+// function comp() {}
+
+// function func() {}
