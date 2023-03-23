@@ -12,16 +12,15 @@
 class School {
   constructor() {
     var name;
-    var address;
   }
-  getStudentName() {
+  get nameget() {
     return this.name;
   }
-  setStudentName(name) {
+  set nameset(name) {
     this.name = name;
   }
 }
 
 let school = new School();
-school.setStudentName("sourabh");
-console.log(school.name);
+school.nameset = "sourabh";
+console.log(school.nameget());

@@ -20,12 +20,12 @@
 //   static eating() {
 //     console.log("Ist static method called");
 //   }
-//   eat() {
+//   static eat() {
 //     console.log("2nd static method called", this);
-//     // this.eating();
+//     this.eating();
 //   }
 // }
-// new Test().eat();
+// Test.eat();
 
 /**
  * We cannot use this keyword directly to call a static method within the non-static method.
@@ -33,6 +33,9 @@
  * of the constructor.
  */
 // class Test {
+//   eating() {
+//     console.log("non static method");
+//   }
 //   static eating() {
 //     console.log("Ist static method called");
 //   }
@@ -40,7 +43,8 @@
 //     console.log("2nd static method called");
 //   }
 //   check() {
-//     Test.eating();
+//     console.log("check method called");
+//     this.eating();
 //   }
 // }
 // let test = new Test();
